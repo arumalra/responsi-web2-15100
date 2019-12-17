@@ -81,12 +81,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    regalforlyfe
+                    Arum Alra Warani
                 </div>
 
                 <div class="links">
                     <!-- ganti url dengan link github anda -->
-                    <a href="https://github.com/regalforlyfe/responsi-web2-12748">GitHub</a>
+                    <a href=https://github.com/arumalra/responsi-web2-15100.git>GitHub</a>
                 </div>
             </div>
         </div>
