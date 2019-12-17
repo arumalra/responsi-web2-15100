@@ -1,21 +1,20 @@
 <?php
 
-namespace App;
+use Illuminate\Database\Seeder;
+use App\Jobs;
+use App\Employees;
 
-use Illuminate\Database\Eloquent\Model;
 
-class Employees extends Model
+class DatabaseSeeder extends Seeder
 {
-    protected $table = 'employees';
-
-    protected $primaryKey = "id_employees";
-    protected $fillable= ['id_jobs','name','email','phone','address',];
-
-    public $timestamps = true;
-
-
-    public function jobs()
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
     {
-        return $this->belongsTo('App\Jobs','id_jobs');
+        factory(Jobs::class,10)->create();
+        factory(Employees::class,150)->create();
     }
 }
